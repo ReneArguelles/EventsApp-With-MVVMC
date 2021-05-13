@@ -45,6 +45,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C30AE4AB264DA3E20054325C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C30AE4A8264DA2290054325C /* UIColor+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C30AE4AC264DA3EF0054325C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C30AE4A5264D9E9C0054325C /* EventListViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C30AE4AD264DA3FB0054325C /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				C3D767D5264C7BB100E88511 /* AppCoordinator.swift */,
+				C30AE4A2264D9DDD0054325C /* EventListCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
 		C35ECBA2264C7B4C0084B8E0 = {
 			isa = PBXGroup;
 			children = (
@@ -64,6 +89,9 @@
 		C35ECBAD264C7B4C0084B8E0 /* EventsApp */ = {
 			isa = PBXGroup;
 			children = (
+				C30AE4AB264DA3E20054325C /* Extensions */,
+				C30AE4AC264DA3EF0054325C /* Controllers */,
+				C30AE4AD264DA3FB0054325C /* Coordinators */,
 				C35ECBAE264C7B4C0084B8E0 /* AppDelegate.swift */,
 				C35ECBB0264C7B4C0084B8E0 /* SceneDelegate.swift */,
 				C35ECBB2264C7B4C0084B8E0 /* ViewController.swift */,
@@ -71,10 +99,6 @@
 				C35ECBB7264C7B4D0084B8E0 /* Assets.xcassets */,
 				C35ECBB9264C7B4D0084B8E0 /* LaunchScreen.storyboard */,
 				C35ECBBC264C7B4D0084B8E0 /* Info.plist */,
-				C3D767D5264C7BB100E88511 /* AppCoordinator.swift */,
-				C30AE4A2264D9DDD0054325C /* EventListCoordinator.swift */,
-				C30AE4A5264D9E9C0054325C /* EventListViewController.swift */,
-				C30AE4A8264DA2290054325C /* UIColor+Extensions.swift */,
 			);
 			path = EventsApp;
 			sourceTree = "<group>";
