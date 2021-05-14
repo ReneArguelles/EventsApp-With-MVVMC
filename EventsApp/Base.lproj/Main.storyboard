@@ -30,9 +30,24 @@
                     <view key="view" contentMode="scaleToFill" id="1fW-RU-Qcd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="eS7-oL-RzN">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="iGv-zU-28u"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="eS7-oL-RzN" firstAttribute="top" secondItem="iGv-zU-28u" secondAttribute="top" id="Uh7-M9-U79"/>
+                            <constraint firstItem="iGv-zU-28u" firstAttribute="bottom" secondItem="eS7-oL-RzN" secondAttribute="bottom" id="gKE-gJ-dia"/>
+                            <constraint firstItem="eS7-oL-RzN" firstAttribute="leading" secondItem="iGv-zU-28u" secondAttribute="leading" id="pbC-hp-keo"/>
+                            <constraint firstItem="iGv-zU-28u" firstAttribute="trailing" secondItem="eS7-oL-RzN" secondAttribute="trailing" id="vw4-mS-Rsw"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="eS7-oL-RzN" id="Rz8-KV-kng"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fup-Js-ICD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
