@@ -26,6 +26,7 @@
 		C35ECBB6264C7B4C0084B8E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C35ECBB4264C7B4C0084B8E0 /* Main.storyboard */; };
 		C35ECBB8264C7B4D0084B8E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C35ECBB7264C7B4D0084B8E0 /* Assets.xcassets */; };
 		C35ECBBB264C7B4D0084B8E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C35ECBB9264C7B4D0084B8E0 /* LaunchScreen.storyboard */; };
+		C36C28A226553F7700D9F147 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36C28A126553F7700D9F147 /* Date+Extensions.swift */; };
 		C3D767D6264C7BB100E88511 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D767D5264C7BB100E88511 /* AppCoordinator.swift */; };
 		C3F876E72651548C00AA05E0 /* ImagePickerCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F876E62651548C00AA05E0 /* ImagePickerCoordinator.swift */; };
 		C3F876EA26515E0F00AA05E0 /* EventsCellBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F876E926515E0F00AA05E0 /* EventsCellBuilder.swift */; };
@@ -55,6 +56,7 @@
 		C35ECBB7264C7B4D0084B8E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C35ECBBA264C7B4D0084B8E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C35ECBBC264C7B4D0084B8E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C36C28A126553F7700D9F147 /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
 		C3D767D5264C7BB100E88511 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		C3F876E62651548C00AA05E0 /* ImagePickerCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerCoordinator.swift; sourceTree = "<group>"; };
 		C3F876E926515E0F00AA05E0 /* EventsCellBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsCellBuilder.swift; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 				C30AE4A8264DA2290054325C /* UIColor+Extensions.swift */,
 				C32038AE264EEC29000490E2 /* UIViewController+Extensions.swift */,
 				C35712FE265448510061A981 /* UIView+Extensions.swift */,
+				C36C28A126553F7700D9F147 /* Date+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -232,6 +235,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C35712FF265448510061A981 /* UIView+Extensions.swift in Sources */,
+				C36C28A226553F7700D9F147 /* Date+Extensions.swift in Sources */,
 				C3D767D6264C7BB100E88511 /* AppCoordinator.swift in Sources */,
 				C32038AC264EEBA8000490E2 /* AddEventViewController.swift in Sources */,
 				C32038AF264EEC29000490E2 /* UIViewController+Extensions.swift in Sources */,
