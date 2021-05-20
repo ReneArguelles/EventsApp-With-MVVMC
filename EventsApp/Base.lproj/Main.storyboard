@@ -68,6 +68,41 @@
             </objects>
             <point key="canvasLocation" x="949" y="82"/>
         </scene>
+        <!--Event Detail View Controller-->
+        <scene sceneID="Y1p-i3-Ee7">
+            <objects>
+                <viewController storyboardIdentifier="EventDetailViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="s2e-rl-D81" customClass="EventDetailViewController" customModule="EventsApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Tig-fa-vhp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3kK-2n-uFT">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="110" placeholderIntrinsicHeight="200" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="hNV-Pq-pru" customClass="TimeRemainingStackView" customModule="EventsApp" customModuleProvider="target">
+                                <rect key="frame" x="152" y="348" width="110" height="200"/>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="72x-Tr-84O"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="3kK-2n-uFT" firstAttribute="leading" secondItem="Tig-fa-vhp" secondAttribute="leading" id="C87-5j-GJ5"/>
+                            <constraint firstItem="3kK-2n-uFT" firstAttribute="top" secondItem="Tig-fa-vhp" secondAttribute="top" id="Yoi-qN-dFs"/>
+                            <constraint firstAttribute="bottom" secondItem="3kK-2n-uFT" secondAttribute="bottom" id="bVd-c5-UZj"/>
+                            <constraint firstItem="hNV-Pq-pru" firstAttribute="centerY" secondItem="Tig-fa-vhp" secondAttribute="centerY" id="fah-LL-rxF"/>
+                            <constraint firstAttribute="trailing" secondItem="3kK-2n-uFT" secondAttribute="trailing" id="h1y-Cb-AdL"/>
+                            <constraint firstItem="hNV-Pq-pru" firstAttribute="centerX" secondItem="Tig-fa-vhp" secondAttribute="centerX" id="iOh-TY-aq6"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundImageView" destination="3kK-2n-uFT" id="Spg-gP-NEw"/>
+                        <outlet property="timeRemainingStackView" destination="hNV-Pq-pru" id="Tzk-ta-V4X"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kjo-A6-ogh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1759" y="82"/>
+        </scene>
     </scenes>
     <resources>
         <systemColor name="systemBackgroundColor">
