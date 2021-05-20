@@ -28,6 +28,9 @@ final class EventCell: UITableViewCell {
     }
     
     private func setupViews() {
+        eventNameLabel.adjustsFontSizeToFitWidth = true
+        dateLabel.adjustsFontSizeToFitWidth = true
+        
         (timeRemainingLabels + [dateLabel, eventNameLabel, backgroundImageView, verticalStackView]).forEach {
             $0.translatesAutoresizingMaskIntoConstraints = false
         }
@@ -67,6 +70,9 @@ final class EventCell: UITableViewCell {
         backgroundImageView.heightAnchor.constraint(equalToConstant: 250).isActive = true
         verticalStackView.pinToSuperviewEdges([.top, .right, .bottom], constant: 15)
         eventNameLabel.pinToSuperviewEdges([.left, .bottom], constant: 15)
+        NSLayoutConstraint.activate([
+            eventNameLabel.rightAnchor.constraint(equalTo: verticalStackView.leftAnchor, constant: -8)
+        ])
     }
     
     func update(with viewModel: EventCellViewModel) {
