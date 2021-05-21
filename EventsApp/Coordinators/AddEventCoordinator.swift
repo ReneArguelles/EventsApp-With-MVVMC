@@ -14,7 +14,7 @@ final class AddEventCoordinator: Coordinator {
     private var modalNavigationController: UINavigationController?
     private var completion: (UIImage) -> Void = { _ in }
     
-    var parentCoordinator: (EventUpdatingCoordinator & Coordinator)?
+    var parentCoordinator: EventUpdatingCoordinator?
     
     init(navigationController: UINavigationController) {
         self.navigationController = navigationController

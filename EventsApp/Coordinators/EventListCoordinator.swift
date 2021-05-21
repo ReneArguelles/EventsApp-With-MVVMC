@@ -8,7 +8,7 @@
 import UIKit
 import CoreData
 
-final class EventListCoordinator: Coordinator, EventUpdatingCoordinator {
+final class EventListCoordinator: EventUpdatingCoordinator {
     private(set) var childCoordinators: [Coordinator] = []
     var onUpdateEvent = { }
     
